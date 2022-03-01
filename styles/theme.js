@@ -4,7 +4,8 @@ const theme = extendTheme({
   colors: {
     borderGrey: "#E3E7ED",
     navLink: "#656565",
-    buttonBlue: "#00BFFF"
+    buttonBlue: "#00BFFF",
+    heroText: "#005CFF"
   },
   textStyles: {
     navLink: {

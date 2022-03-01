@@ -55,16 +55,18 @@ export default function WithSubnavigation() {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <NextLink href="/" passHref>
-            <Link
-              pl={2}
-              py={1}
-              pr={[2, 2, 6]}
-              borderRight={{ base: "0px", md: "1px" }}
-              borderStyle={{ base: "solid", md: "solid" }}
-              borderColor={{ base: "borderGrey", md: "borderGrey" }}
-            >
-              <Image src="/logo.svg" alt="Airnip logo" />
-            </Link>
+            <Center>
+              <Link
+                pl={2}
+                py={1}
+                pr={[2, 2, 6]}
+                borderRight={{ base: "0px", md: "1px" }}
+                borderStyle={{ base: "solid", md: "solid" }}
+                borderColor={{ base: "borderGrey", md: "borderGrey" }}
+              >
+                <Image src="/logo.svg" alt="Airnip logo" />
+              </Link>
+            </Center>
           </NextLink>
           <Flex display={{ base: "none", md: "flex" }} ml={4}>
             <DesktopNav />
