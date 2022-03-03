@@ -30,7 +30,7 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box px={[0, 2, 10]} boxShadow="lg">
+    <Box px={[0, 2, 10]} boxShadow="xl">
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
