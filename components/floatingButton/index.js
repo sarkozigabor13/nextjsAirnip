@@ -14,7 +14,7 @@ export default function floatingButton() {
     <>
       <IconButton
         onClick={toast}
-        pos="absolute"
+        pos="fixed"
         bottom="40px"
         right="40px"
         w="60px"

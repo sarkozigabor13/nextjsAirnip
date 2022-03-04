@@ -3,6 +3,8 @@ import Navbar from "../components/navbar";
 import HeroSection from "../components/hero";
 import FloatingButton from "../components/floatingButton";
 import PartnersSection from "../components/partners";
+import FooterSection from "../components/footer";
+import QuestionsSection from "../components/questions";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <PartnersSection />
+      <QuestionsSection />
+      <FooterSection />
     </>
   );
 }
