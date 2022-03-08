@@ -10,30 +10,30 @@ import {
 
 const questions = [
   {
-    title: "Ipsum dolor sit amet?",
+    title: "What’s Airnip?",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    title: "Lorem ipsum dolor sit amet?",
+    title: "What kind of agencies is Airnip for?",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    title: "Details about pricing",
+    title: "Do I need to have the whole team register to manage my agency in Airnip?",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    title: "How can I lorem ipsum?",
+    title: "Is there a free version of Airnip?",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    title: "Consectetur adipiscing elit?",
+    title: "Do I need to submit my card details to start my trial?",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
 ];
 
 const SingleAccordionItem = ({ children }) => {
   return (
-    <AccordionItem border="none">
+    <AccordionItem  border="none">
       {({ isExpanded }) => (
         <Box
           border="1px"
@@ -54,6 +54,7 @@ const QuestionTitle = ({ children }) => {
   return (
     <h2>
       <AccordionButton
+         p={'0px'}
         _hover={{
           background: "transparent",
         }}
@@ -70,7 +71,7 @@ const QuestionTitle = ({ children }) => {
         >
           {children}
         </Box>
-        <AccordionIcon />
+        <AccordionIcon color={"#A9ABB1"} />
       </AccordionButton>
     </h2>
   );
@@ -81,10 +82,10 @@ export default function collapseSection() {
     <Box>
       <Center>
         <Accordion w={"794px"} allowMultiple>
-          {questions.map((question) => (
-            <SingleAccordionItem>
+          {questions.map((question, index) => (
+            <SingleAccordionItem key={index}>
               <QuestionTitle>{question.title}</QuestionTitle>
-              <AccordionPanel pb={4}>{question.text}</AccordionPanel>
+              <AccordionPanel px={'0px'} pt={'8px'}>{question.text}</AccordionPanel>
             </SingleAccordionItem>
           ))}
         </Accordion>

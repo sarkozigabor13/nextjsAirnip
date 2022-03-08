@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/navbar";
 import HeroSection from "../components/hero";
+import BookSection from "../components/book";
 import FloatingButton from "../components/floatingButton";
 import PartnersSection from "../components/partners";
 import FooterSection from "../components/footer";
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <PartnersSection />
+      <BookSection />
       <QuestionsSection />
       <FooterSection />
     </>
