@@ -1,11 +1,13 @@
 import Head from "next/head";
 import Navbar from "../components/navbar";
-import HeroSection from "../components/hero";
-import BookSection from "../components/book";
 import FloatingButton from "../components/floatingButton";
+import HeroSection from "../components/hero";
 import PartnersSection from "../components/partners";
-import FooterSection from "../components/footer";
+import LayoutGreyBackground from "../components/greyBg";
+import ReviewSection from "../components/review";
+import BookSection from "../components/book";
 import QuestionsSection from "../components/questions";
+import FooterSection from "../components/footer";
 
 export default function Home() {
   return (
@@ -19,6 +21,9 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <PartnersSection />
+      <LayoutGreyBackground>
+        <ReviewSection />
+      </LayoutGreyBackground>
       <BookSection />
       <QuestionsSection />
       <FooterSection />
