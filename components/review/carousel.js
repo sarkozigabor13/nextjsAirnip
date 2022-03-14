@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, VStack, chakra, Grid, GridItem } from "@chakra-ui/react";
+import { Box, VStack, Grid, GridItem } from "@chakra-ui/react";
 
 import Arrows from "./carouselArrow";
 import CarouselCurrent from "./carouselCurrent";

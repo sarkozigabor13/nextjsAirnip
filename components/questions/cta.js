@@ -36,7 +36,7 @@ export default function ctaSection() {
             or{" "}
             <Link textDecoration={"underline"} color="#005CFF" href="#">
               book a demo
-            </Link>
+            </Link> {" "}
             Trusted by 24k+ active user.
           </chakra.span>{" "}
           No credit card requied for start.

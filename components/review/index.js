@@ -1,5 +1,4 @@
-import { Center } from "@chakra-ui/layout";
-import { Container, Box } from "@chakra-ui/layout";
+import { Box, Center, Container  } from "@chakra-ui/layout";
 import Carousel from "./carousel";
 
 export default function reviewSection() {

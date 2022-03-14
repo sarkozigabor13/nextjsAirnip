@@ -3,7 +3,10 @@ import Navbar from "../components/navbar";
 import FloatingButton from "../components/floatingButton";
 import HeroSection from "../components/hero";
 import PartnersSection from "../components/partners";
+import VideoSection from "../components/video";
 import LayoutGreyBackground from "../components/greyBg";
+import FeaturesSection from "../components/features";
+import IntegratedSection from "../components/integrate";
 import ReviewSection from "../components/review";
 import BookSection from "../components/book";
 import QuestionsSection from "../components/questions";
@@ -21,7 +24,10 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <PartnersSection />
+      <VideoSection />
       <LayoutGreyBackground>
+        <FeaturesSection />
+        <IntegratedSection />
         <ReviewSection />
       </LayoutGreyBackground>
       <BookSection />
