@@ -4,8 +4,8 @@ import MapLinesSection from "./map";
 
 export default function mapSection() {
   return (
-    <Box w="100%" pt={"96px"} bgImage="url('./acc_bg.svg')" pb={"192px"}>
-      <Container maxW={"7xl"} pt="96px" pb="96px">
+    <Box w="100%" pt="96px" bgImage="url('./acc_bg.svg')">
+      <Container maxW={"7xl"} pt="96px">
         <Center>
           <Heading fontSize="36px" color="#005CFF">
             Airnip in action
