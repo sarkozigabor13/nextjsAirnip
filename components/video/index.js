@@ -36,17 +36,15 @@ export default function videoSection() {
           </Text>
         </Box>
       </Center>
-      <Center>
-      <Box maxW="998px">
+      <Box d="block" m="auto" w="50%" >
+        <AspectRatio maxW="998px" ratio={1}>
           <iframe
-            width="998"
-            height="500"
             src="https://www.youtube.com/embed/kh3uEa8jABg"
             title="YouTube video player"
-            frameBorder="0"
+            allowFullScreen
           />
-          </Box>
-      </Center>
+        </AspectRatio>
+      </Box>
     </Container>
   );
 }

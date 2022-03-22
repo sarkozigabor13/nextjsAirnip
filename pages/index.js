@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import FloatingButton from "../components/floatingButton";
 import HeroSection from "../components/hero";
 import PartnersSection from "../components/partners";
+import MapSection from "../components/map";
 import VideoSection from "../components/video";
 import LayoutGreyBackground from "../components/greyBg";
 import FeaturesSection from "../components/features";
@@ -24,6 +25,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <PartnersSection />
+      <MapSection />
       <VideoSection />
       <LayoutGreyBackground>
         <FeaturesSection />
