@@ -4,7 +4,14 @@ import MapLinesSection from "./map";
 
 export default function mapSection() {
   return (
-    <Box w="100%" pt="96px" bgImage="url('./acc_bg.svg')">
+    <Box
+      w="100%"
+      pt="96px"
+      bgImage="url('./acc_bg.svg')"
+      backgroundRepeat="no-repeat"
+      backgroundPosition="center"
+      backgroundSize="cover"
+    >
       <Container maxW={"7xl"} pt="96px">
         <Center>
           <Heading fontSize="36px" color="#005CFF">
