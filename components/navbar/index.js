@@ -30,7 +30,14 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box px={[0, 2, 10]} boxShadow="xl">
+    <Box
+      px={[0, 2, 10]}
+      boxShadow="0px 0px 20px rgb(0 0 0 / 10%)"
+      position="sticky"
+      top="0"
+      bg={useColorModeValue("white", "gray.800")}
+      zIndex="999"
+    >
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
@@ -39,21 +46,7 @@ export default function WithSubnavigation() {
         px={{ base: 4 }}
         align={"center"}
       >
-        <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
-        >
-          <IconButton
-            onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
-            variant={"ghost"}
-            aria-label={"Toggle Navigation"}
-          />
-        </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+        <Flex flex={{ base: 1 }} justify={{ base: "", md: "start" }}>
           <NextLink href="/" passHref>
             <Center>
               <Link
@@ -73,11 +66,27 @@ export default function WithSubnavigation() {
           </Flex>
         </Flex>
 
+        <Flex
+          flex={{ base: 0, md: "auto" }}
+          ml={{ base: -2 }}
+          display={{ base: "flex", md: "none" }}
+        >
+          <IconButton
+            onClick={onToggle}
+            icon={
+              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+            }
+            variant={"ghost"}
+            color="#000000"
+            aria-label={"Toggle Navigation"}
+          />
+        </Flex>
         <Stack
           flex={{ base: 1, md: 0 }}
           justify={"flex-end"}
           direction={"row"}
           spacing={6}
+          display={{ base: "none", md: "inline-flex" }}
         >
           <Button
             as={"a"}
@@ -88,6 +97,7 @@ export default function WithSubnavigation() {
             _hover={{
               textDecoration: "none",
             }}
+            display={{ base: "none", md: "inline-flex" }}
           >
             Log in
           </Button>

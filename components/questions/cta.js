@@ -5,7 +5,7 @@ export default function ctaSection() {
     <>
       <Center>
         <Heading
-          fontSize="56px"
+          fontSize={["36px", "56px"]}
           maxW={"794px"}
           color="#005CFF"
           textAlign={"center"}
@@ -27,7 +27,7 @@ export default function ctaSection() {
       <Center>
         <Text
           pt={"16px"}
-          pb={'192px'}
+          pb={["96px", "192px"]}
           fontSize={"12px"}
           textAlign={"center"}
           color={"#656565"}
@@ -39,6 +39,7 @@ export default function ctaSection() {
             </Link> {" "}
             Trusted by 24k+ active user.
           </chakra.span>{" "}
+          <chakra.br display={["block", "none"]} />
           No credit card requied for start.
         </Text>
       </Center>

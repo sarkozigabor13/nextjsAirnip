@@ -1,15 +1,28 @@
 import { Box, Center, Container, Heading, Text } from "@chakra-ui/layout";
 import { SimpleGrid, Image } from "@chakra-ui/react";
+import { ST } from "next/dist/shared/lib/utils";
 
 export default function integratedSection() {
+  const Styles = {
+    img: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      w: {
+        base: "70px",
+        md: "120px",
+      },
+    },
+  };
+
   return (
-    <Container maxW={"7xl"} pb="216px">
+    <Container maxW={"7xl"} pb={["96px", "216px"]}>
       <Center>
         <Heading fontSize="36px" color="#005CFF">
           Fully integrated
         </Heading>
       </Center>
-      <Center pb={"80px"}>
+      <Center pb={["40px", "56px"]}>
         <Box maxW="592px">
           <Text
             pt={"24px"}
@@ -25,20 +38,11 @@ export default function integratedSection() {
         </Box>
       </Center>
       <Center>
-      <SimpleGrid columns={2} spacing="56px">
-          <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-          >
-            
+        <SimpleGrid columns={2} spacing={["15px", "56px"]}>
+          <Box {...Styles.img}>
             <Image src="/clockify.png" alt="Clockify logo" />
           </Box>
-          <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-          >
+          <Box {...Styles.img}>
             <Image src="/toggl.png" alt="Toggl logo" />
           </Box>
         </SimpleGrid>

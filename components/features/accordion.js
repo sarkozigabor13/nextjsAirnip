@@ -98,7 +98,7 @@ const QuestionTitle = ({ children }) => {
 
 export default function accordionSection() {
   return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} spacing="192px">
+    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{base: "50px", md: "192px"}}>
       <Stack spacing={4}>
         <Box>
           <Center>

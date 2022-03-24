@@ -20,6 +20,7 @@ export default function floatingButton() {
         w="60px"
         h="60px"
         bg="#F2CC4D"
+        zIndex="999"
         color="white"
         aria-label="FAQ"
         isRound="true"

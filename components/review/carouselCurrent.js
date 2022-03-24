@@ -7,7 +7,7 @@ const CarouselCurrent = (props) => {
       <Box
         key={`dots-${props.slide}`}
         cursor="pointer"
-        w="50%"
+        w={["80px", "50%"]}
         h="5px"
         mb="40px"
         bg={props.currentSlide === props.slide ? "#005CFF" : "#E1EBF0"}

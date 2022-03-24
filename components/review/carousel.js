@@ -43,9 +43,9 @@ const Component = () => {
             sm: "repeat(2, 1fr)",
             md: "repeat(2, 1fr)",
           }}
-          gap={4}
+          gap={["64px", 4]}
         >
-          <GridItem colSpan={1}>
+          <GridItem colSpan={1} order={[2, 1]}>
             <VStack alignItems="flex-start">
               <Box maxW="390px">
                 {Array.from({ length: slidesCount }).map((_, slide) => (
@@ -61,7 +61,7 @@ const Component = () => {
               </Box>
             </VStack>
           </GridItem>
-          <GridItem>
+          <GridItem order={[1, 2]}>
             <CarouselImage currentSlide={currentSlide} slides={slides} />
           </GridItem>
         </Grid>

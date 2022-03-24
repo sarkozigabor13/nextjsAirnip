@@ -1,18 +1,14 @@
-import {
-  Container,
-  Heading,
-  Text
-} from "@chakra-ui/react";
+import { Container, Heading, Text } from "@chakra-ui/react";
 
 import { Box, Center } from "@chakra-ui/layout";
 
-import AccordionSection from "./accordion"
+import AccordionSection from "./accordion";
 
 export default function featuresSection() {
   return (
-    <Container maxW={"7xl"} pt='96px' pb='192px'>
+    <Container maxW={"7xl"} pb={["96px", "192px"]}>
       <Center>
-        <Heading fontSize="36px" color="#005CFF">
+        <Heading fontSize="36px" color="#005CFF" textAlign="center">
           The agency operating system A-Z
         </Heading>
       </Center>

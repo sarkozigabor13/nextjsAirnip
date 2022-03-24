@@ -7,7 +7,7 @@ import {
   Text,
   useColorModeValue,
   Divider,
-  Center
+  Center,
 } from "@chakra-ui/react";
 
 const Logo = (props) => {
@@ -85,47 +85,84 @@ const ListHeader = ({ children }) => {
 export default function footerSection() {
   return (
     <Box color={useColorModeValue("gray.700", "gray.200")}>
-      <Center py={10}>
+      <Center py={[0, 10]}>
         <Divider maxW={"90%"} />
       </Center>
       <Container as={Stack} maxW={"6xl"} py={10}>
+        <Box display={["block", "none"]} mb="56px">
+          <Logo />
+        </Box>
         <SimpleGrid
-          templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 1fr 1fr" }}
+          templateColumns={{ base: "1fr 1fr", md: "2fr 1fr 1fr 1fr 1fr" }}
           spacing={8}
         >
-          <Stack spacing={6}>
+          <Stack spacing={6} display={["none", "block"]}>
             <Box>
-              <Logo/>
+              <Logo />
             </Box>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Overview</ListHeader>
-            <Link color={"#A9ABB1"} href={"#"}>Product</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Pricing</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Demo</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Customers</Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Product
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Pricing
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Demo
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Customers
+            </Link>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Overview</ListHeader>
-            <Link color={"#A9ABB1"} href={"#"}>Product</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Pricing</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Demo</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Customers</Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Product
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Pricing
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Demo
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Customers
+            </Link>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Follow us</ListHeader>
-            <Link color={"#A9ABB1"} href={"#"}>Facebook</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Instagram</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Linkedin</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Twitter</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Medium</Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Facebook
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Instagram
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Linkedin
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Twitter
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Medium
+            </Link>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Company</ListHeader>
-            <Link color={"#A9ABB1"} href={"#"}>About us</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Carrers</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Terms &#38; Policies</Link>
-            <Link color={"#A9ABB1"} href={"#"}>Contact us</Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              About us
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Carrers
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Terms &#38; Policies
+            </Link>
+            <Link color={"#A9ABB1"} href={"#"}>
+              Contact us
+            </Link>
           </Stack>
         </SimpleGrid>
       </Container>

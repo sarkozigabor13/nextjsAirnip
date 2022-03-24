@@ -9,9 +9,9 @@ export default function reviewSection() {
           <Center
             textAlign="center"
             color="#005CFF"
-            fontSize="36px"
+            fontSize={["24px", "36px"]}
             fontWeight="700"
-            mb="80px"
+            mb={["20px", "80px"]}
           >
             The ones who already got their work in flow
           </Center>

@@ -7,7 +7,7 @@ import {
 
 export default function ctaBook() {
     return (
-        <InputGroup size="lg" w="full" mb={'16px'} mt={'40px'} display={{ base: "none", lg: "flex" }}>
+        <InputGroup size="lg" w="full" mb={'16px'} mt={'40px'}>
           <Input
             color="brand.900"
             type="email"

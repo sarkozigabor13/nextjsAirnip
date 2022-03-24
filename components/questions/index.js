@@ -6,10 +6,10 @@ import CtaSection from "../questions/cta";
 export default function questionsSection() {
   return (
     <>
-      <Box w="100%" pt={"96px"} bgImage="url('./acc_bg.svg')" pb={"192px"}>
+      <Box w="100%" pt={"96px"} bgImage="url('./acc_bg.svg')" pb={["96px", "192px"]}>
         <Container maxW={"7xl"}>
           <Center>
-            <Heading fontSize="36px" color="#005CFF">
+            <Heading fontSize="36px" color="#005CFF" textAlign="center">
               Questions and answers
             </Heading>
           </Center>

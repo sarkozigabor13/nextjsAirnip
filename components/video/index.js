@@ -1,12 +1,12 @@
 import { Container, Heading, Text, AspectRatio } from "@chakra-ui/react";
-
 import { Box, Center } from "@chakra-ui/layout";
+import YoutubeVideo from "./video";
 
 export default function videoSection() {
   return (
     <Container maxW={"7xl"} pt="96px" pb="96px">
       <Center>
-        <Heading fontSize="36px" color="#005CFF">
+        <Heading fontSize="36px" color="#005CFF" textAlign="center">
           Smart is the new easy
         </Heading>
       </Center>
@@ -36,13 +36,9 @@ export default function videoSection() {
           </Text>
         </Box>
       </Center>
-      <Box d="block" m="auto" w="50%" >
-        <AspectRatio maxW="998px" ratio={1}>
-          <iframe
-            src="https://www.youtube.com/embed/kh3uEa8jABg"
-            title="YouTube video player"
-            allowFullScreen
-          />
+      <Box >
+        <AspectRatio m="0 auto" boxShadow="lg" ratio={1} maxWidth="998px" maxHeight="500">
+          <YoutubeVideo embedId="kh3uEa8jABg" />
         </AspectRatio>
       </Box>
     </Container>

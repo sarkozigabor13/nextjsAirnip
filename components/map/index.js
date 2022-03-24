@@ -6,7 +6,6 @@ export default function mapSection() {
   return (
     <Box
       w="100%"
-      pt="96px"
       bgImage="url('./acc_bg.svg')"
       backgroundRepeat="no-repeat"
       backgroundPosition="center"
