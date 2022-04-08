@@ -296,16 +296,17 @@ const NAV_ITEMS = [
   },
   {
     label: "Pricing",
+    href: "/pricing",
     children: [
       {
         label: "Job Board",
         subLabel: "Find your dream design job",
-        href: "#",
+        href: "/pricing",
       },
       {
         label: "Freelance Projects",
         subLabel: "An exclusive list for contract work",
-        href: "#",
+        href: "/pricing",
       },
     ],
   },
